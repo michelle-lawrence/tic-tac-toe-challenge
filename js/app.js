@@ -60,7 +60,7 @@ function Game(boardDimensions) {
 		var rowArray = [];
 		for (var col = 0; col < boardDimensions; col++){
 			$(".row-" + (row + 1)).append("<div class='col col-" 
-				+ (col + 1) + "'></div>");
+				+ (col + 1) + "'><div class='col-content'></div></div>");
 			rowArray.push(Object.create(gameCell));
 		}
 		this.gameBoard.push(rowArray);
